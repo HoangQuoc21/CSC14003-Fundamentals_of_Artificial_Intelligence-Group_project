@@ -1,8 +1,9 @@
-G,G,G,G,G,G,G,G
-G,1,2,3,3,2,1,G
-G,1,T,T,T,T,1,G
-G,1,2,3,3,2,1,G
-G,G,G,G,G,G,G,G
-G,G,G,G,G,G,G,G
-G,G,G,G,G,G,G,G
-G,G,G,G,G,G,G,G
+G,G,G,G,G,G,G,G,G
+1,2,3,3,3,3,3,2,1
+2,T,T,T,T,T,T,T,2
+3,T,5,3,3,3,5,T,3
+3,T,5,3,3,3,5,T,3
+2,T,T,T,T,T,T,T,2
+1,2,3,3,3,3,3,2,1
+G,G,G,G,G,G,G,G,G
+G,G,G,G,G,G,G,G,G
