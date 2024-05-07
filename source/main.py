@@ -1,7 +1,6 @@
 from pysat.formula import CNF
 from pysat.solvers import Solver
 from itertools import combinations
-import os
 
 # function to convert 2D position to flatten position
 def convert_to_flatten(pos, size):
@@ -150,14 +149,16 @@ def write_output(output_file, result):
 
 # Main function
 def main():
-    text_case_number = len([name for name in os.listdir('inputs') if os.path.isfile(os.path.join('inputs', name))])
+    text_case_folder = "testcases"
+    text_case_number = 5
     
     for i in range(1, text_case_number + 1):
-        input_file = "inputs/input" + str(i) + ".txt"
-        output_file = "outputs/output" + str(i) + ".txt"
+        input_file =  f"{text_case_folder}/input{i}.txt"
+        output_file = f"{text_case_folder}/output{i}.txt"
         
         size, grid = read_input(input_file)
         
+        '''Uncomment the following lines to see the clauses generated for the SAT problem'''
         # clause = generate_clauses(size, grid)
         # print_clauses(clause)
         # print('-'*40)
